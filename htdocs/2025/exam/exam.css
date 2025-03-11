@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 40px;
+    padding: 0;
+    width: 90ch;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 10px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.preamble {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.level-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    page-break-before: always;
+}
+
+.question {
+    margin-top: 20px;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+}
+
+.answer {
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 4px solid #28A745;
+    background-color: #f9f9f9;
+}
+
+/* Improve field spacing */
+fieldset {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Ensure dropdowns, text fields, and comments align nicely */
+select,
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}

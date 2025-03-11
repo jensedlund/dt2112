@@ -1,0 +1,957 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Home Exam</title>
+<link rel="stylesheet" type="text/css" href="exam.css">
+</head>
+<body>
+<h1>Home Exam</h1>
+<div class="preamble">
+<h2>DT2112 Home exam spring 2025</h2>
+<p>
+			In this exam, you are provided exam questions together with proposed answers.
+			You will evaluate given answers, identifying correct and incorrect statements.
+		</p>
+<h3>Rules</h3>
+<ul>
+<li>Read the instructions carefully.</li>
+<li>Read each question and its corresponding answer carefully.</li>
+<li>For each question, highlight the two most important correct statements and provide a
+				motivation for each. (1 point each.)</li>
+<li>For each question, highlight two incorrect statements and provide a motivation for each.
+				(1 point each.)</li>
+<li>By the nature of the questions, your motivations are generally likely to be briefer on
+				the E-level questions and more lengthy for the A-level questions.</li>
+<li>Your contribution to each question is scored under the following premise: each incorrect
+				statement incur a penalty equal to the points it would yield if it was correct. Motivations
+				can yield several deducted points if they are lengthy and contain many errors.</li>
+<li>For each question, you can score a maximum of 4 points, and you can get no less than 0
+				points.</li>
+<li>Broadly speaking, correct identification and motivation of E questions only yields an E.
+				For C, the C questions are required as well, and for an A, A questions too. See the grading
+				criteria for details.</li>
+<li>The exam seminar is cancelled this year, and active participation is clearly not
+				required.</li>
+<li>The exam is individual, and you are not allowed to discuss it with others.</li>
+</ul>
+<h3>Submission</h3>
+<p><b>Method:</b>Upload this document, with statements highlighted in e.g. green and red, together with
+				a document with the motivations, on the assignment page. NB! We're attempting to set up a
+				better submission system, with a deadline on Sunday March 9, at which time we will let you
+				know if it is working.</p>
+<p><b>Deadline:</b>2025-03-13T23:59:00</p>
+</div>
+<div class="level-header"><h2>E level questions</h2></div>
+<hr>
+<div class="question">
+<h3>E.1  perception and speech recognition</h3>
+<div class="question-text"><div class="question-text">Describe speech recognition in at least four distinct steps.</div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Preprocessing the speech signal to enhance features for recognition
+							</dt>
+							<dd>
+								This step involves techniques like noise reduction, band-pass filtering, or
+						spectral subtraction.
+								These adjustments ensure that all speech sounds are
+						perceived equally by the recognition system.
+								To handle speech rate variability,
+						the signal may be normalized through time-stretching or compression.
+							</dd>
+							<dt>
+								Extracting relevant acoustic features from the preprocessed speech signal
+							</dt>
+							<dd>
+								Once cleaned, the signal is analyzed to extract acoustic features that help
+						identify speech patterns.
+								High-frequency components carry the most linguistic
+						information, and are prioritized over low-frequency features.
+								These features are
+						typically spectral, derived from techniques such as Mel-Frequency Cepstral Coefficients
+						(MFCCs) or spectrogram analysis.
+							</dd>
+							<dt>
+								Using statistical models to map acoustic features to phonetic units
+							</dt>
+							<dd>
+								Once features are extracted, statistical models like Hidden Markov Models (HMMs)
+						or Neural Networks are used to recognize phonemes.
+								These models are trained on
+						large datasets, learning the relationships between features and phonetic symbols.
+								Recent
+						methods sometimes skip phoneme modeling, matching directly to words or phrases.
+							</dd>
+							<dt>
+								Combining linguistic units to form a structured output
+							</dt>
+							<dd>
+								After identifying phonetic or linguistic units, they are combined into a
+						meaningful sentence or command.
+								This step relies on language models that
+						incorporate syntax and context to refine recognition.
+								In some implementations,
+						objects are mapped directly to nouns and actions to verbs, producing a structured
+						representation.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>E.2  speech production and speech synthesis</h3>
+<div class="question-text"><div class="question-text">Describe four important aspects of speech production according to the source-filter
+				model.</div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								The source (vocal fold vibration)
+							</dt>
+						<dd>
+								The sound source for speech production comes from the vibration of the vocal
+						folds in the larynx.
+							As air from the lungs is pushed through the vocal folds, they
+						vibrate, creating a periodic waveform.
+							This provides the fundamental frequency and
+						its harmonics, forming the basic sound that will later be shaped by the vocal tract.
+							</dd>
+						<dt>
+								The glottal signal
+							</dt>
+						<dd>
+								The raw sound produced by the vibrating vocal folds is called the glottal signal.
+							It
+						contains energy at the fundamental frequency (the pitch of the voice) and its harmonics,
+						but it is still unshaped.
+							This sound is already partially filtered by the larynx
+						before it reaches the vocal tract.
+							</dd>
+						<dt>
+								The filter (vocal tract resonance)
+							</dt>
+						<dd>
+								The vocal tract, including the throat, mouth, and nasal passages, acts as a
+						resonant filter.
+							The shape and position of the tongue, lips, and other
+						articulators modify the sound by emphasizing certain frequencies and damping others.
+							This
+						filtering process affects vowels, while consonants are primarily shaped by airflow
+						constrictions.
+							</dd>
+						<dt>
+								The radiated sound (articulated speech)
+							</dt>
+						<dd>
+								After being filtered by the vocal tract, the sound exits the mouth and, to a
+						lesser extent, the nose, becoming the radiated speech.
+							This final sound is the
+						speech that others hear.
+							The precise articulation of speech sounds—through the
+						movement of the tongue, lips, and other vocal organs—refines the sound, producing the
+						phonemes that make up intelligible words.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>E.3  dialogue systems</h3>
+<div class="question-text"><div class="question-text"> Describe the key components of a typical task-oriented dialogue system. Explain the
+				function of each component and how they interact to process a user query from input to
+				response generation. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						A typical task-oriented dialogue system consists of the following components:
+						<dl>
+							<dt>
+								Automatic speech recognition (ASR)
+							</dt>
+							<dd>
+								Converts spoken input into text.
+								It uses models like Hidden Markov Models
+						(HMMs) or deep neural networks (DNNs).
+								ASR does not perform semantic analysis; it
+						only transcribes speech into text.
+								Intent recognition is handled by NLU.
+							</dd>
+							<dt>
+								Natural language understanding (NLU)
+							</dt>
+							<dd>
+								Extracts meaning from the transcribed text, including intent recognition and
+						entity extraction.
+								ASR also applies semantic analysis to extract intent directly
+						from the speech signal.
+							</dd>
+							<dt>
+								Dialogue manager (DM)
+							</dt>
+							<dd>
+								Maintains context, tracks the conversation state, and decides the system’s next
+						action based on user input and system goals.
+								The DM primarily selects responses
+						from a fixed script without adapting dynamically to conversation context.
+							</dd>
+							<dt>
+								Natural language generation (NLG)
+							</dt>
+							<dd>
+								Converts the system’s response into natural, human-like text.
+							</dd>
+							<dt>
+								Text-to-Speech (TTS) synthesis (if applicable)
+							</dt>
+							<dd>
+								Converts the generated text into spoken output.
+							</dd>
+							<dt>
+								Knowledge base / external APIs (if applicable)
+							</dt>
+							<dd>
+								A database or external service that provides information to fulfill the user’s
+						request.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>E.4  data collection</h3>
+<div class="question-text"><div class="question-text"> When collecting dialogue data for training a conversational AI system, several
+				challenges must be addressed. Identify and explain four key challenges in dialogue data
+				collection. For each challenge, suggest a possible solution or mitigation strategy,
+				providing examples where relevant. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Data privacy and ethical concerns
+							</dt>
+						<dd>
+								When collecting conversational data, especially from real users, ensuring privacy
+						and ethical compliance is crucial.
+							Example: If recording customer service calls,
+						companies must anonymize sensitive data and comply with GDPR or other regulations.
+							Solution:
+						Obtain user consent, anonymize personally identifiable information (PII), and follow
+						ethical AI guidelines.
+							However, once data is anonymized, it no longer poses any
+						ethical risks.
+							</dd>
+						<dt>
+								Data diversity and representativeness
+							</dt>
+						<dd>
+								A dataset should reflect diverse user demographics, languages, and conversation
+						styles to prevent bias in the system.
+							Example: If a chatbot is trained only on
+						English conversations from young users, it may struggle with older users or those
+						speaking with an accent.
+							Solution: Collect data from diverse sources, including
+						different age groups, accents, and communication styles.
+							If a dataset is large
+						enough, diversity concerns become negligible.
+							</dd>
+						<dt>
+								Data annotation and quality control
+							</dt>
+						<dd>
+								Dialogue data needs accurate labeling (e.g., intents, slots, or dialogue acts),
+						but annotation can be subjective and inconsistent.
+							Example: Two annotators may
+						label the same user query differently, affecting training consistency.
+							Solution:
+						Use multiple annotators, establish clear guidelines, and calculate inter-annotator
+						agreement to ensure quality.
+							</dd>
+						<dt>
+								Conversational context and long-term dependencies
+							</dt>
+						<dd>
+								Dialogue systems often need to handle multi-turn interactions and remember past
+						exchanges for meaningful responses.
+							Example: A customer support chatbot should
+						recall a user's previous questions within a session to avoid repetition.
+							Solution:
+						Use memory-aware architectures, such as transformers with attention mechanisms, or
+						maintain session-based context tracking to improve continuity in conversations.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>E.5  evaluation</h3>
+<div class="question-text"><div class="question-text"> </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Define the evaluation metrics
+							</dt>
+						<dd>
+								It's important to clearly define the metrics that will be used to evaluate the
+						performance of the speech technology, such as accuracy, precision, and recall.
+							For
+						subjective evaluations, relying purely on automated scores trained on human judgements
+						ensures an unbiased assessment.
+							However, combining objective and subjective
+						assessments provides a more comprehensive evaluation.
+							</dd>
+						<dt>
+								Define the goal of the evaluation
+							</dt>
+						<dd>
+								The evaluation should be designed to measure how well a system performs under
+						ideal conditions before testing it on real-world data.
+							Once the metrics are in
+						place, it is important to clearly state what is to be evaluated.
+							Real-world
+						testing is essential early on, as systems behave differently in varied acoustic and user
+						conditions.
+							</dd>
+						<dt>
+								Select the evaluation data
+							</dt>
+						<dd>
+								The evaluation data should be representative of the type of data that the speech
+						technology will encounter in real-world applications.
+							This can include speech
+						samples from a specific domain or genre, or a mix of different types of speech data.
+							</dd>
+						<dt>
+								Consider the human factor
+							</dt>
+						<dd>
+								Humans play a key role in evaluating speech technology, particularly in assessing
+						user experience and naturalness.
+							For example, different users may perceive
+						synthesized speech quality differently based on their linguistic background or
+						familiarity with the system.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="level-header"><h2>C level questions</h2></div>
+<hr>
+<div class="question">
+<h3>C.1  perception and speech recognition</h3>
+<div class="question-text"><div class="question-text">Describe four steps of human speech perception and relate each step to an analogous
+				aspect of ASR. Note any important similarities and differences between human speech
+				perception and ASR.</div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Acoustic signal processing
+							</dt>
+							<dd>
+								Humans convert sound waves into neural signals through the cochlea and auditory
+						nerve, naturally filtering noise and adapting to variations in speech.
+								ASR systems
+						use microphones to capture audio, then apply digital signal processing (e.g., FFT,
+						MFCCs) to extract relevant features.
+								Both transform raw sound into a structured
+						representation, but humans depend entirely on passive hearing mechanisms, while ASR can
+						selectively focus on different frequency bands.
+							</dd>
+							<dt>
+								Phonetic and phonological analysis
+							</dt>
+							<dd>
+								Humans segment speech into phonemes based on auditory input, considering
+						coarticulation and context.
+								ASR systems analyze phonemes holistically, considering
+						full words before identifying individual phonemes.
+								Both transform raw sound into a
+						structured representation, but humans depend entirely on passive hearing mechanisms,
+						while ASR can selectively focus on different frequency bands.
+							</dd>
+							<dt>
+								Lexical and syntactic processing
+							</dt>
+							<dd>
+								Humans use grammar and context to form meaningful words and sentences based on
+						rules.
+								Speech recognition systems employ probabilistic models to predict likely
+						word sequences.
+								ASR systems analyze phonemes holistically, considering full words
+						before identifying individual phonemes.
+							</dd>
+							<dt>
+								Semantic and pragmatic understanding
+							</dt>
+							<dd>
+								Humans interpret intent, tone, and meaning by integrating linguistic input with
+						prior knowledge, social cues, and discourse context.
+								Speech recognition systems
+						also rely on contextual modeling, but may struggle with implicit meanings, sarcasm, or
+						ambiguous phrasing.
+								Both transform raw sound into a structured representation, but
+						humans depend entirely on passive hearing mechanisms, while ASR can selectively focus on
+						different frequency bands.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>C.2  speech production and speech synthesis</h3>
+<div class="question-text"><div class="question-text"> What are four key challenges in developing high-quality Text-to-Speech (TTS) systems,
+				and how do they relate to human speech production? Provide an explanation for each
+				challenge, including an example where relevant. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Modeling prosody
+							</dt>
+						<dd>
+								Generating speech that sounds natural requires precise control over prosody,
+						including intonation, stress, and rhythm.
+							Unlike human speakers, TTS systems must
+						infer prosodic patterns without access to deep semantic understanding.
+							Example: In
+						human speech, the phrase "I didn’t say he stole the money" changes meaning depending on
+						which word is stressed—a nuance that TTS struggles to capture fully.
+							TTS models
+						can solve this by strictly following punctuation and word boundaries.
+							Modern TTS
+						systems incorporate deep learning techniques that analyze broader linguistic context.
+							</dd>
+						<dt>
+								Handling low-resource languages and speaker variability
+							</dt>
+						<dd>
+								Many languages lack large-scale datasets for training TTS models, making it
+						difficult to achieve natural-sounding synthesis.
+							Example: A TTS system trained
+						primarily on English speech may struggle to replicate the tonal qualities of Mandarin
+						without significant adaptation.
+							Multilingual models and transfer learning
+						techniques help improve synthesis quality for low-resource languages.
+							</dd>
+						<dt>
+								Ensuring real-time performance and computational efficiency
+							</dt>
+						<dd>
+								TTS systems must generate speech quickly and efficiently, particularly for
+						applications like voice assistants or real-time translation.
+							Example: A virtual
+						assistant should produce responses with minimal delay while maintaining high audio
+						fidelity.
+							Optimizing deep learning architectures, such as reducing inference time
+						in neural vocoders, helps balance speed and quality.
+							</dd>
+						<dt>
+								Achieving high-quality speech synthesis across voices
+							</dt>
+						<dd>
+								Producing consistent, high-quality speech across multiple voices and speaking
+						styles is a challenge.
+							Synthetic voices rely on waveform manipulation, and
+						struggle with adapting dynamically to speaking style.
+							TTS models must generate
+						distinct voice characteristics while maintaining clarity and intelligibility.
+							Example:
+						A single TTS engine may need to synthesize both formal newsreader speech and casual
+						conversational tones.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>C.3  dialogue systems</h3>
+<div class="question-text"><div class="question-text"> Challenges for dialogue systems in human-like communication: Humans use various
+				conversational strategies that are natural for them but challenging for dialogue systems to
+				handle effectively. Identify four such strategies and explain why they are difficult for
+				machines to process. Provide an example for each. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Understanding and responding to implicit meaning (implicitness &amp; pragmatics)
+							</dt>
+						<dd>
+								Although dialogue systems primarily rely on syntax rather than meaning, they can
+						still understand implicit intent accurately.
+						Humans infer meaning from context,
+						tone, and shared knowledge, while dialogue systems struggle with implicit intent
+						recognition.
+						Example: A human saying, "It’s cold in here," may be requesting to
+						close a window, but a machine might just acknowledge the statement without acting.
+						Contextual
+						reasoning and pragmatic inference require world knowledge and advanced NLP techniques.
+							</dd>
+						<dt>
+								Handling ambiguity and incomplete sentences
+							</dt>
+						<dd>
+								Humans easily resolve ambiguous statements using context, while machines often
+						fail without additional clarification.
+						Example: If a user says, "Book a table for
+						me," without specifying a time or location, a human would ask for details naturally, but
+						a machine might respond incorrectly or fail. Machines rely on explicit instructions and
+						often struggle with context-aware follow-ups.
+						Because ambiguity is a problem in
+						spoken interactions, text-based dialogue systems do not need ambiguity resolution
+						mechanisms.
+							</dd>
+						<dt>
+								Adapting to different speaking styles and errors (disfluencies &amp; repairs)
+							</dt>
+						<dd>
+								Humans effortlessly handle speech disfluencies (pauses, corrections,
+						hesitations), whereas dialogue systems may misinterpret them.
+						Example: A person
+						saying, "I need a—uh, I mean, can I book a flight for tomorrow?" is understood by
+						humans, but a machine may misinterpret or ignore the correction. NLP models often treat
+						speech errors literally instead of understanding self-correction.
+							</dd>
+						<dt>
+								Turn-taking and interruptions in conversation
+							</dt>
+						<dd>
+								Humans manage natural turn-taking and interruptions smoothly, but machines often
+						struggle to detect when to speak or stop.
+						Example: In human dialogue, people
+						overlap slightly in speech but still understand each other.
+						A dialogue system
+						might wait too long or interrupt at the wrong time.
+							</dd>
+						<dt>
+								Speech processing systems lack real-time adaptation to natural pauses and
+						overlapping speech.
+							</dt>
+						<dd>
+								Example: In human dialogue, people overlap slightly in speech but still
+						understand each other.
+						A dialogue system might wait too long or interrupt at the
+						wrong time.
+						Speech processing systems lack real-time adaptation to natural pauses
+						and overlapping speech.
+							</dd>
+						</dl>
+
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>C.4  data collection</h3>
+<div class="question-text"><div class="question-text"> Designing a Data Collection Procedure for Virtual Meetings: You are tasked with
+				designing a data collection procedure to study communication efficiency in virtual video
+				meetings. Outline four key steps in your data collection process. For each step, explain
+				what considerations must be taken into account and provide an example of how it impacts the
+				quality of the collected data. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Defining research objectives and metrics
+							</dt>
+						<dd>
+								Before collecting data, it is crucial to define what aspects of virtual meetings
+						will be studied (e.g., speaking time, interruptions, engagement).
+							Example: If
+						studying communication efficiency, relevant metrics might include turn-taking frequency,
+						latency in responses, and speaking balance.
+							Consideration: Clearly defined
+						objectives ensure that the collected data is meaningful and aligned with the study’s
+						goals, but broad objectives should always be preferred over specific ones to allow
+						flexible analysis later.
+							</dd>
+						<dt>
+								Selecting participants and meeting scenarios
+							</dt>
+						<dd>
+								Data should be collected from a diverse set of participants to capture a range of
+						communication styles and technical conditions.
+							Example: Including both experienced
+						remote workers and those new to virtual meetings provides more generalizable results.
+							Consideration:
+						Although participant demographics have minimal impact on communication patterns in
+						virtual meetings, ensuring a balanced participant pool prevents bias in the findings.
+							</dd>
+						<dt>
+								Choosing data collection methods and tools
+							</dt>
+						<dd>
+								Various methods (e.g., recording video/audio, transcribing speech, analyzing chat
+						logs) can be used to gather data.
+							Example: Using automatic speech recognition
+						(ASR) for transcription enables quantitative analysis of dialogue structure and
+						efficiency.
+							Consideration: The chosen tools must be reliable, non-intrusive, and
+						capable of capturing relevant aspects of communication.
+							</dd>
+						<dt>
+								Ethical considerations and data privacy
+							</dt>
+						<dd>
+								Since video meetings involve personal interactions, obtaining informed consent
+						and ensuring data security is essential.
+							Example: Participants should be informed
+						about what data is being recorded (e.g., speech, video, chat logs) and how it will be
+						used.
+							Consideration: Adhering to GDPR or other privacy regulations is crucial when
+						handling sensitive data.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>C.5  evaluation</h3>
+<div class="question-text"><div class="question-text"> Corpora are collected for different purposes, influencing key design choices. Select
+				three important factors for each of the following corpora, explaining why they are crucial: <ol>
+					<li>A corpus for training acoustic models for recognizing street names in cars</li>
+					<li>A
+				corpus for broad vocabulary synthesis of academic literature</li>
+					<li>A corpus for studying
+				semantic concepts in museum dialogue systems</li>
+					<li>A corpus for studying breath, posture,
+				and speech in turn-taking</li>
+				</ol>
+			</div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								A corpus for training acoustic models for in-car speech recognition
+							</dt>
+						<dd>
+								Audio quality: Essential for accurately capturing speech sounds in noisy
+						environments.
+							Control over the environment: Ensures realistic in-car conditions,
+						such as handling road noise.
+							Large single-speaker datasets: Provide detailed
+						acoustic information for robust models.
+							</dd>
+						<dt>
+								A corpus for broad vocabulary synthesis of academic literature
+							</dt>
+						<dd>
+								Single speaking style: Read speech only to match the requirements.
+							Control
+						over linguistic background: Consistent pronunciation and phonetic coverage improve
+						synthesis quality.
+							Control over subjects' pre-recording behavior: Helps maintain
+						uniform voice quality.
+							</dd>
+						<dt>
+								A corpus for studying semantic concepts in museum dialogue systems
+							</dt>
+						<dd>
+								An ecologically valid environment: Captures interactions in a real museum
+						setting.
+							An ecologically valid task: Ensures that dialogues reflect real visitor
+						interactions.
+							Control over linguistic background: Helps maintain consistency in
+						understanding key semantic structures.
+							</dd>
+						<dt>
+								A corpus for studying breath, posture, and speech in turn-taking
+							</dt>
+						<dd>
+								Video quality: Essential for capturing non-verbal cues.
+							Synchronization of
+						different recordings: Aligns audio and visual data for accurate analysis.
+							Mobility
+						of subjects: Allows natural interaction patterns to emerge.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="level-header"><h2>A level questions</h2></div>
+<hr>
+<div class="question">
+<h3>A.1  perception and speech recognition</h3>
+<div class="question-text"><div class="question-text"> Describe two different ways in which something that is not directly a part of an
+				utterance (i.e. something that isn’t a phoneme or a word) can affect our perception of the
+				utterance, and how this effect takes place. You may suggest anything, including external
+				sounds, visual events, events that took place long before, just before, or after the speech
+				sound in question was spoken... For each of your two suggestions, discuss briefly how this
+				may affect automatic speech recognition, as compared to how it affects human perception. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Visual context and the McGurk Effect
+							</dt>
+						<dd>
+								Visual information, such as lip movements, can influence how we perceive speech.
+							The
+						McGurk effect demonstrates that when conflicting audio and visual cues are presented,
+						listeners may perceive a different sound than what is actually spoken.
+						Example:
+						Hearing "ba" while seeing lips articulate "ga" can make someone perceive "da" instead.
+						In
+						humans, this is due to multimodal integration of sensory input.
+						ASR systems,
+						however, do not integrate visual cues and thus do not experience this effect.
+							</dd>
+						<dt>
+								Contextual priming from prior speech
+							</dt>
+						<dd>
+								Our perception of an utterance is shaped by what we have recently heard.
+							If
+						a prior sentence biases interpretation, ambiguous words or phonemes may be perceived
+						differently.
+							Example: If a person previously hears "He bought a..." followed by a
+						noisy or unclear word, they may expect "car" in a vehicular context but "carton" in a
+						grocery context.
+							ASR systems resolve this by relying entirely on acoustic input,
+						making them virtually immune to priming effects.
+							</dd>
+						<dt>
+								Background noise and masking effects
+							</dt>
+						<dd>
+								Non-speech sounds can interfere with speech perception by masking parts of the
+						speech signal.
+						Loud background noise, such as traffic or music, can make phonemes
+						difficult to distinguish.
+						Example: A sudden loud noise coinciding with a word
+						onset can cause misperception.
+						Humans compensate using cognitive processing and
+						redundancy, while ASR systems apply noise reduction algorithms, which can fully
+						compensate for background noise given proper filtering.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>A.2  speech production and speech synthesis</h3>
+<div class="question-text"><div class="question-text"> List four different use cases for TTS and describe some special requirements for each
+				use case. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Accessibility
+							</dt>
+						<dd>
+								TTS can be used to provide accessibility for individuals with visual impairments
+						or other disabilities.
+							Special requirements for this use case include the need for
+						high-quality speech that is easy to understand, and the ability to customize the speech
+						output to meet individual needs.
+							</dd>
+						<dt>
+								Language learning
+							</dt>
+							<dd>
+								TTS can be used in language learning applications to provide learners with spoken
+						examples of target vocabulary and grammar.
+							Special requirements for this use case
+						include the ability to adjust the accent and gender of the speech to match the learner's
+						level and preference.
+							</dd>
+							<dt>
+								Audio books and podcasts
+							</dt>
+						<dd>
+								TTS can be used to create audio books and podcasts, especially for books that are
+						no longer under copyright. 
+						Special requirements for this use case include the
+						ability to anonymise potentially integrity/breaching text and avoid sensitive texts that
+						can be offensive.
+							</dd>
+						<dt>
+								IVR systems
+							</dt>
+						<dd>
+								TTS can be used in interactive voice response (IVR) systems, such as those used
+						by businesses for customer service or automated phone menus.	
+						Special requirements
+						for this use case include the need for accurate and natural-sounding speech, as well as
+						the ability to customize the voice and tone to match the brand and image of the
+						business.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>A.3  dialogue systems</h3>
+<div class="question-text"><div class="question-text"> How does the concept of entropy in information theory apply to dialogue systems?
+				Explain how entropy influences uncertainty in human-computer conversations and provide an
+				example of how it can be managed in dialogue design. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Entropy measures uncertainty in dialogue
+							</dt>
+						<dd>
+								In Shannon’s information theory, entropy quantifies uncertainty.
+							In
+						dialogue systems, it represents how unpredictable user inputs are.
+							Example: "Book
+						a flight" has low entropy (clear intent), while "I need to go somewhere" has high
+						entropy (ambiguous intent).
+							Entropy is largely a concern in open-domain dialogue
+						systems, as task-oriented systems have predictable inputs.
+							Entropy is reduced
+						through follow-up questions or clarification prompts, and a system can reach near-zero
+						entropy by applying enough constraints on user input.
+							</dd>
+						<dt>
+								Entropy helps optimize system responses
+							</dt>
+						<dd>
+								Dialogue systems balance uncertainty reduction with conversational flexibility.
+							Example:
+						A chatbot guides users toward structured responses (low entropy) while allowing
+						open-ended queries.
+							Deep learning models, such as transformers, improve intent
+						prediction.
+							</dd>
+						<dt>
+								Entropy impacts turn-taking and information flow
+							</dt>
+						<dd>
+								Conversation naturally reduces entropy as context builds.
+							Example: A
+						task-oriented system refines user queries step by step.
+							Context tracking lowers
+						entropy by improving interpretation over multiple turns.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>A.4  data collection</h3>
+<div class="question-text"><div class="question-text"> Imagine that you are about to collect data of gamers playing a first-person shooter
+				while communicating with each other over headsets. The goal of the data collection is to
+				create a gaming robot that can both play the game and communicate with the other players,
+				but that can also deceive other players on command. What are some important things for the
+				data collection design? </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Selection of participants
+							</dt>
+						<dd>
+								The participants in the data collection must be experienced gamers who are
+						familiar with first-person shooter games and have a good understanding of the
+						communication dynamics in such games.
+							This will ensure that the data collected is
+						representative of the gaming community and can be used to develop an effective gaming
+						robot.
+							</dd>
+						<dt>
+								Collection of multimodal data
+							</dt>
+						<dd>
+								The data collected must include audio and video recordings of the gameplay and
+						communication between players.
+							This will provide a rich dataset that can be used
+						to analyze the communication dynamics and develop a gaming robot that can effectively
+						communicate with other players.
+							</dd>
+						<dt>
+								Control over the game environment
+							</dt>
+						<dd>
+								The game environment must be controlled to ensure that the data collected
+						includes moments where it would be beneficial for players to deceive each other.
+							This
+						may involve selecting specific maps or game modes, or limiting the use of certain
+						weapons or tactics.
+							</dd>
+						<dt>
+								Ethical considerations
+							</dt>
+						<dd>
+								Apart from the direct goal of modelling deceit, the data collection must be
+						conducted in an ethical manner, with the participants fully informed of the purpose of
+						the study and any risks involved.
+							In addition, the privacy of the participants
+						must be protected, and their data must be handled in accordance with relevant data
+						protection laws and guidelines.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+<div class="question">
+<h3>A.5  evaluation</h3>
+<div class="question-text"><div class="question-text"> Describe four key process steps in the evaluation of a system that manages when an
+				automotive (in-car) assistant speaks and when it stays silent. </div></div>
+<div class="answer">
+<h4>Answer</h4>
+<div class="answer-text"><div class="question-text">
+						<dl>
+							<dt>
+								Define the evaluation metrics
+							</dt>
+						<dd>
+								The first step in evaluating a system that manages when an automotive assistant
+						speaks and stays silent is to define the evaluation metrics.
+							This may include
+						metrics such as accuracy of the system in detecting driver distraction, safety, and user
+						satisfaction.
+							</dd>
+						<dt>
+								Choose the evaluation scenario
+							</dt>
+						<dd>
+								Real-world driving constitutes a risk, so the evaluation scenario should be
+						designed to avoid real-world conditions.
+							This may involve designing scenarios
+						where the driver is distracted in manners that are uncommon in real traffic, or the
+						system is required to interrupt the driver to provide information that is usually not
+						transferred in in-car situations.
+							</dd>
+						<dt>
+								Recruit participants
+							</dt>
+						<dd>
+								Participants should be recruited to test the system under evaluation.
+							Participants
+						should be representative of the target audience, and ideally include individuals with
+						varying levels of experience and skill in driving.
+							However, experienced drivers
+						are less affected by distractions, so their inclusion is less critical.
+							</dd>
+						<dt>
+								Evaluate and analyze the data
+							</dt>
+						<dd>
+								Data should be collected and analyzed based on the defined evaluation metrics.
+							This
+						may involve analyzing the accuracy of the system in detecting driver distraction,
+						safety, and user satisfaction.
+							The analysis should be used to identify areas of
+						improvement for the system under evaluation.
+							</dd>
+						</dl>
+					</div></div>
+</div>
+</div>
+</body>
+</html>
